@@ -165,6 +165,18 @@ p {
   border-radius: 12px;
 }
 
+.categories {
+  display: flex;
+}
+
+.categories .category,
+li {
+  list-style: none !important;
+  margin-right: 2em;
+  font-size: medium;
+}
+
+
 @media screen and (min-width: 769px) {
   main {
     margin-left: 120px;
