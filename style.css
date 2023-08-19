@@ -1,0 +1,269 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.container-wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  border-right: 1px solid #CECECE;
+  width: 116px;
+  height: 100%;
+  padding: 36px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+}
+
+.logo {
+  width: 100%;
+  margin-top: -100px;
+}
+
+main {
+  /* background-color: blueviolet; */
+  flex-grow: 1;
+}
+
+.sidebar .main .list-item {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar .main {
+  margin-top: 100px;
+}
+
+.sidebar .main .list-item .icon-wrapper {
+  width: 66px;
+  height: 49px;
+  margin-bottom: 38px;
+  border-radius: 7px;
+  /* background: linear-gradient(68deg, #227B48 0%, #B6EF4F 100%); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar .main .list-item .icon-wrapper p,
+a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #227B48 !important;
+  line-height: 10px;
+}
+
+.sidebar .main .list-item .icon-wrapper:hover,
+:focus {
+  background: linear-gradient(68deg, #FFF 0%, #B6EF4F 100%);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #227B48;
+}
+
+.brand-mobile {
+  display: none;
+}
+
+.card-custom {
+  background-color: #227B48;
+  position: fixed;
+}
+
+.card-title h5,
+p {
+  color: #FFF !important;
+}
+
+.subtitle-banner {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.btn-custom {
+  background-color: #FFF;
+  color: #000;
+}
+
+.text-card-custom {
+  color: #FFF !important;
+}
+
+.img-banner {
+  background-image: url('images/banner1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-wrapper .title-banner {
+  color: #FFF;
+}
+
+.banner-wrapper {
+  border-radius: 12px;
+  background: linear-gradient(196deg, #002B12 0%, #00461E 46.84%);
+  box-shadow: 0px 24px 30px -2px rgba(0, 0, 0, 0.25);
+}
+
+.desc-banner-wrapper {
+  padding: 2rem;
+}
+
+.btn-banner {
+  width: 133px;
+  height: 38px;
+  border-radius: 120px;
+  background: #FFF;
+  color: #000;
+  font-size: smaller;
+}
+
+
+.btn-banner:hover {
+  background: #777777;
+  border: none;
+}
+
+.title-article {
+  font-size: medium;
+
+}
+
+.text-article {
+  font-size: small;
+  color: #555555 !important;
+  text-align: justify;
+  max-width: 90%;
+  line-height: normal;
+}
+
+.img-article {
+  width: 100%;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    margin-left: 120px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ilustration {
+    display: none;
+  }
+
+  .sidebar {
+    border-right: none;
+    background-color: #FFF;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    box-shadow: -1px 31px 37px 0px rgba(96, 96, 96, 0.2);
+    -webkit-box-shadow: -1px 31px 37px 0px rgba(96, 96, 96, 0.20);
+    -moz-box-shadow: -1px 31px 37px 0px rgba(96,
+        96, 96, 0.20);
+    z-index: 2;
+  }
+
+  .logo {
+    margin-top: 10px;
+    width: 40px;
+  }
+
+  .btn-search {
+    z-index: 1 !important;
+  }
+
+  .brand-mobile {
+    display: block;
+    position: absolute;
+    top: 20px;
+    color: #227B48;
+    position: fixed;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .list-item {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    transition: 0.3s;
+    background-color: #FFF;
+
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .list-item.active {
+    left: 0;
+  }
+
+  main {
+    height: 100vh;
+    margin-top: 76px;
+    padding: 20px;
+  }
+
+  main p {
+    text-align: justify;
+  }
+
+  .card-custom {
+    position: absolute;
+  }
+}
