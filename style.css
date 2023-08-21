@@ -116,6 +116,8 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 
 .banner-wrapper .title-banner {
@@ -176,6 +178,37 @@ li {
   font-size: medium;
 }
 
+footer {
+  border: 1px solid #CECECE;
+  border-radius: 12px;
+  padding-top: 20px;
+}
+
+
+.logo-footer {
+  max-width: 30px;
+}
+
+.text-footer {
+  color: #002B12 !important;
+  font-size: small;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.bawah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  font-size: small;
+  font-weight: 400;
+  color: #555555;
+}
+
+
 
 @media screen and (min-width: 769px) {
   main {
@@ -186,6 +219,7 @@ li {
 
 
 @media screen and (max-width: 768px) {
+
   .container {
     display: flex;
     flex-direction: column;
