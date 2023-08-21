@@ -208,11 +208,30 @@ footer {
   color: #555555;
 }
 
+.mini-title {
+  font-size: small;
+  font-weight: 400;
+  color: #555555;
+}
+
+.desc-content {
+  color: #000 !important;
+  text-align: justify;
+  text-indent: 50px;
+  line-height: 40px;
+  padding-inline: 20px;
+}
+
 
 
 @media screen and (min-width: 769px) {
   main {
     margin-left: 120px;
+  }
+
+  .card-custom-mobile {
+    background-color: #00461E;
+    display: none;
   }
 }
 
@@ -310,6 +329,11 @@ footer {
   }
 
   .card-custom {
-    position: absolute;
+    display: none;
+  }
+
+  .card-custom-mobile {
+    background-color: #227B48;
+    text-align: left;
   }
 }
